@@ -1,0 +1,100 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        
+        min-height:100vh;
+        background:linear-gradient(135deg,#800000,#5a0000);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .card{
+        background:white;
+        border-radius: 30px;
+        padding: 30px;
+        text-align: center;
+        box-shadow: 0 20px 50px #0005;
+        animation: slide 3s ease-in;
+    }
+    .animation{
+        animation: fadein 4s ease-in-out;
+    }
+    h2{
+        color:#800000;
+        font-size: 30px;
+        
+    }
+    p{
+        color: #5e5d5d ;
+    }
+    .message{
+        padding: 10px;
+        margin-top: -20px;
+         color:#800000;
+         font-family: 'Times New Roman', Times, serif;
+         font-weight: bolder;
+    }
+    input{
+        outline: none;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-left: -10px;
+
+    }
+    button{
+        width: 70%;
+        padding: 10px;
+        border-radius: 10px;
+        border: 0;
+        cursor: pointer;
+        background:linear-gradient(125deg,#800000,#b8860b);
+        animation: fade 4s ease-in-out;
+    }
+
+    #qrcode{
+        margin: 25px auto 10px;
+        width: fit-content;
+    }
+    .download{
+        display: none;
+        background:linear-gradient(125deg,#800000,#b8860b);
+    }
+    @keyframes slide{
+        from {
+            transform:translate3d(2000px) ;
+            opacity: 0;
+        }
+        to {
+            transform: translate3d(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fadein{
+        from {
+            transform: translatex(25px);
+            opacity: 0;
+        }
+        to {
+            transform: translatex(0);
+            opacity: 1;
+        }
+    }
+    @keyframes fade{
+        from {
+            transform: translate3d(25px);
+            opacity: 0;
+        }
+        to {
+            transform: translate3(0);
+            opacity: 1;
+        }
+    }
+    
